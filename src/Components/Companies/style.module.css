@@ -1,0 +1,53 @@
+.main_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.text_container {
+    margin-bottom: 80px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    flex-direction: column;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    color: #CBD5E1;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: left;
+    justify-content: space-evenly;
+    
+}
+
+.companies_logos {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 740px) {
+    .logos {
+        grid-template-columns: auto auto ;
+        text-align: left;
+        justify-items: center;
+        justify-content: center;
+    }
+    .last_logo {
+        width: 80%;
+    }
+}

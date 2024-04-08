@@ -1,0 +1,114 @@
+.main_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.contant {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 80px;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: #818CF8;
+    margin: 0;
+}
+
+.heading {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 79.2px;
+    text-align: center;
+    margin: 0;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 48%;
+    text-align: center;
+    color: #CBD5E1;
+}
+
+.description_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.buttons_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 56px;
+    gap: 16px;
+}
+
+.more_info {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 8;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #334155;
+    border: #475569;
+    border-radius: 8px;
+    min-width: 256px;
+}
+
+.start_btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 8;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #4F46E5;
+    border: #475569;
+    border-radius: 8px;
+    border: 1px solid #6366F1;
+    min-width: 256px;
+}
+
+.image_container {
+    margin-top: 80px;
+}
+
+@media (max-width: 600px) {
+ .buttons_container button {
+    min-width: 172.5px;
+ }
+ .heading {
+    font-size: 48px;
+ }
+ .description {
+    font-size: 16px;
+    line-height: 22.4px;
+    width: 90%;
+    width: 400;
+ }
+ .heading {
+    line-height: 52.8px;
+ }
+}
