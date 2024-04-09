@@ -16,8 +16,8 @@ function TeamProgress() {
                     </span>
                 </div>
                 <div className={style.buttons_container} >
-                    <CustomButton  backgroundColor="#4F46E5" textColor="white" border='#6366F1' children='Start for free' />
-                    <CustomButton  backgroundColor="#334155" textColor="white" border='#475569' children='Request more info' />
+                    <CustomButton  backgroundColor="#4F46E5" textColor="white" border='#6366F1' maxWidth='256px' children='Start for free' />
+                    <CustomButton  backgroundColor="#334155" textColor="white" border='#475569' maxWidth='256px' children='Request more info' />
                 </div>
                 <div className={style.image_container} >
                     <img src={img} alt='shape' ></img>

@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function CustomButton({ backgroundColor, textColor, onClick, children, border }) {
+function CustomButton({ backgroundColor, textColor, onClick, children, border, maxWidth }) {
   const buttonStyle = {
     backgroundColor: backgroundColor,
     color: textColor,
@@ -11,10 +10,13 @@ function CustomButton({ backgroundColor, textColor, onClick, children, border })
     fontSize: '16px',
     fontWeight: 'bold',
     transition: 'background-color 0.3s ease',
-    maxWidth: '256px',
+    maxWidth: maxWidth,
     width: '100%',
     boxSizing: 'border-box',
-    padding: '8px'
+    padding: '8px',
+    height: "56px", 
+  
+    
   };
 
   return (
@@ -23,12 +25,5 @@ function CustomButton({ backgroundColor, textColor, onClick, children, border })
     </button>
   );
 }
-
-CustomButton.propTypes = {
-  backgroundColor: PropTypes.string.isRequired,
-  textColor: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
-  children: PropTypes.node.isRequired,
-};
 
 export default CustomButton;
