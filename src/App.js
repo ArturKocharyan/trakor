@@ -8,20 +8,24 @@ import TeamBanner from './Components/TeamBanner/TeamBanner';
 import TeamProgress from './Components/TeamProgress/TeamProgress';
 import Text from './Components/Text/Text';
 import Tools from './Components/Tools/Tools';
+import WorkFaster from './Components/WorkFaster/WorkFaster';
+import SliderCompanies from './SliderCompanies/SliderCompanies';
 
 function App() {
   return (
     <div className="App">
       <div className='Content' >
-      <NavBar />
-      <TeamProgress />
-      <Companies />
-      <Text />
-      <TeamBanner />
-      <BigBanner />
-      <Tools />
-      <Management />
-      <Graphic />
+        <NavBar />
+        <TeamProgress />
+        <Companies />
+        <Text />
+        <TeamBanner />
+        <BigBanner />
+        <Tools />
+        <Management />
+        <Graphic />
+        <WorkFaster />
+        <SliderCompanies />
       </div>
     </div>
   );

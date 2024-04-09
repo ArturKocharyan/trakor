@@ -1,0 +1,48 @@
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  justify-content: center; /* Center the cards */
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 384px;
+  height: 506px;
+  background-color: #ccc;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.active {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
