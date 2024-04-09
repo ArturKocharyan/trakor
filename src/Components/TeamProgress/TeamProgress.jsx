@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './style.module.css'
 import img from '../../asstes/Shapes.png'
+import CustomButton from '../../elements/Button'
 
 function TeamProgress() {
     return (
@@ -15,8 +16,8 @@ function TeamProgress() {
                     </span>
                 </div>
                 <div className={style.buttons_container} >
-                    <button className={style.start_btn} >Start for free</button>
-                    <button className={style.more_info} >Request more info</button>
+                    <CustomButton  backgroundColor="#4F46E5" textColor="white" border='#6366F1' children='Start for free' />
+                    <CustomButton  backgroundColor="#334155" textColor="white" border='#475569' children='Request more info' />
                 </div>
                 <div className={style.image_container} >
                     <img src={img} alt='shape' ></img>
