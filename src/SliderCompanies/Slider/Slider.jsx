@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
 
-function Slider() {
+function SliderCompanies() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const cards = ["Card 1", "Card 2", "Card 3", "Card 4", "Card 5"];
@@ -27,7 +27,7 @@ function Slider() {
               style={{
                 transform: `translate(${(index - selectedIndex) * 80}px, ${
                   index === selectedIndex ? "-100px" : "-50px"
-                }) scale(${index === selectedIndex ? 1.2 : 1})`,
+                }) scale(${index === selectedIndex || index === 0 || index === 4 ? 1.2 : 1})`,
                 zIndex: index === selectedIndex ? 1 : 0
               }}
             >
@@ -48,4 +48,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default SliderCompanies;

@@ -9,6 +9,7 @@
 }
 
 .slider {
+  width: 100%;
   display: flex;
   justify-content: center; /* Center the cards */
   align-items: center;
@@ -19,20 +20,22 @@
 
 .card {
   width: 384px;
-  height: 506px;
-  background-color: #ccc;
-  border: 1px solid #999;
+  height: 506px; /* Default height */
+  background-color: #334155;
+  border: 1px solid #475569;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-right: 20px;
-  transition: transform 0.3s ease;
+  margin-right: 12px; /* Add margin between cards */
+  transition: transform 0.3s ease, height 0.3s ease; /* Add height transition */
+  border-radius: 20px;
 }
 
 .active {
-  transform: scale(1.2);
-  z-index: 1;
+  height: 606px; /* Adjusted height when card is selected */
+  transform: translateY(-100px); /* Adjusted position when card is selected */
+  border-radius: 20px;
 }
 
 .prev,
