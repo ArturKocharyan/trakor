@@ -1,5 +1,6 @@
 import './App.css';
 import Companies from './Components/Companies/Companies';
+import Management from './Components/Menagement/Management';
 import NavBar from './Components/NavBar/NavBar';
 import BigBanner from './Components/PigBanner/BigBanner';
 import TeamBanner from './Components/TeamBanner/TeamBanner';
@@ -18,6 +19,7 @@ function App() {
       <TeamBanner />
       <BigBanner />
       <Tools />
+      <Management />
       </div>
     </div>
   );

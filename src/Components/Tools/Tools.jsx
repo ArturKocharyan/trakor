@@ -19,8 +19,8 @@ function Tools() {
                 </div>
                 <div className={style.second_container} >
                     <div className={style.title_container} >
-                        <span className={style.first_title} >Powerful tools.</span>
-                        <span className={style.second_title} >More control.</span>
+                        <span>Powerful tools.</span>
+                        <span>More control.</span>
                     </div>
                     <div className={style.text_container} >
                         <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
