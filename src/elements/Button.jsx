@@ -15,8 +15,6 @@ function CustomButton({ backgroundColor, textColor, onClick, children, border, m
     boxSizing: 'border-box',
     padding: '8px',
     height: "56px", 
-  
-    
   };
 
   return (
