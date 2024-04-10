@@ -13,6 +13,16 @@
     justify-content: space-between;
 }
 
+.main_container h1 {
+    font-size: 32px;
+}
+
+.second_part {
+    display: flex;
+    width: 83%;
+    justify-content: space-between;
+}
+
 .main_container a {
     text-decoration: none;
     color: white;
@@ -32,7 +42,7 @@
     align-content: center;
     text-align: center;
     width: 79%;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .href_items {
@@ -43,9 +53,12 @@
 .buttons_container {
     display: inline-flex;
     height: 100%;
-    flex-wrap: wrap;
     align-content: center;
     text-align: center;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
 }
 
 .login_BTN {
@@ -77,4 +90,21 @@
     border: #475569;
     border-radius: 8px;
 
+}
+
+.menu_button {
+    display: none;
+}
+
+@media (max-width: 740px) {
+    .second_part {
+        display: none;
+    }
+    .menu_button {
+        display: flex;
+        padding: 3%;
+    }
+    .main_container h1 {
+        margin-left: 20px;
+    }
 }
