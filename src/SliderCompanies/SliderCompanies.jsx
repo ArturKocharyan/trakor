@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './style.module.css'
+import Slider from './Slider/Slider'
 
 function SliderCompanies() {
   return (
@@ -12,7 +13,7 @@ function SliderCompanies() {
             <p>Sem malesuada sed lectus id nunc mattis est eget tincidunt.</p>
         </div>
         <div className={style.silder_div} >
-            {/* <Slider /> */}
+           <Slider /> 
         </div>
     </div>
   )

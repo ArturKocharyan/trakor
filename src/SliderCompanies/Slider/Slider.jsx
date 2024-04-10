@@ -1,51 +1,92 @@
-import React, { useState } from "react";
-import style from "./style.module.css";
+import React, { useState, useRef } from 'react'
+import style from './style.module.css'
+import SmartFinderLogo from '../../asstes/logos/SmartFinder.png'
+import ShellsLogo from '../../asstes/logos/Shells.png'
+import ArtVenueLogo from '../../asstes/logos/ArtVenue.png'
+import ZoomerrLogo from '../../asstes/logos/Zoomerr.png'
+import WavesLogo from '../../asstes/logos/Waves.png'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-function SliderCompanies() {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+function Slider() {
 
-  const cards = ["Card 1", "Card 2", "Card 3", "Card 4", "Card 5"];
+  const containerRef = useRef(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-  const handlePrev = () => {
-    setSelectedIndex((selectedIndex + 4) % 5);
+  const scrollPref = () => {
+    const newPosition = scrollPosition - 40;
+    setScrollPosition(newPosition < 0 ? 0 : newPosition);
+    if (containerRef.current) {
+      containerRef.current.scrollLeft = newPosition;
+    }
   };
 
-  const handleNext = () => {
-    setSelectedIndex((selectedIndex + 1) % 5);
+  const scrollNext = () => {
+    const newPosition = scrollPosition + 40;
+    if (containerRef.current) {
+      containerRef.current.scrollLeft = newPosition;
+    }
+    setScrollPosition(newPosition);
   };
+
 
   return (
-    <div className={style.main_container}>
-      <div className={style.sliderContainer}>
-        <div className={style.slider}>
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className={`${style.card} ${
-                index === selectedIndex ? style.active : ""
-              }`}
-              style={{
-                transform: `translate(${(index - selectedIndex) * 80}px, ${
-                  index === selectedIndex ? "-100px" : "-50px"
-                }) scale(${index === selectedIndex || index === 0 || index === 4 ? 1.2 : 1})`,
-                zIndex: index === selectedIndex ? 1 : 0
-              }}
-            >
-              {card}
-            </div>
-          ))}
+    <div>
+      <div className={style.cards_container} ref={containerRef} >
+        <div className={style.items} >
+          <div className={style.title} >
+            <span className={style.companies_logos} ><span><img src={SmartFinderLogo} alt='SmartFinderLogo' /></span><span><p>SmartFinder</p></span></span>
+          </div>
+          <div className={style.text} >
+            Amet morbi enim sodales quis dui, in habitant pharetra. Risus id fringilla sed adipiscing volutpat sit varius turpis. Sed pretium semper rhoncus, tellus semper.
+          </div>
         </div>
-        <div className={style.buttonsContainer}>
-          <button className={style.prev} onClick={handlePrev}>
-            Prev
-          </button>
-          <button className={style.next} onClick={handleNext}>
-            Next
-          </button>
+        <div className={style.items} >
+          <div className={style.title} >
+            <span className={style.companies_logos} ><span><img src={ZoomerrLogo} alt='Zoomerr' /></span><span><p>Zoomerr</p></span></span>
+          </div>
+          <div className={style.text} >
+            Non risus viverra enim, quis. Eget vitae arcu vivamus sit tellus, viverra turpis lorem. Varius a turpis urna id porttitor.
+          </div>
         </div>
+        <div className={style.items} >
+          <div className={style.title} >
+            <span className={style.companies_logos} ><span><img src={ShellsLogo} alt='SmartFinderLogo' /></span><span><p>Shells</p></span></span>
+          </div>
+          <div className={style.text} >
+            Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla. Lacus, ut congue sagittis vel nisi integer imperdiet a vitae.
+          </div>
+        </div>
+        <div className={style.items} >
+          <div className={style.title} >
+            <span className={style.companies_logos} ><span><img src={ArtVenueLogo} alt='SmartFinderLogo' /></span><span><p>ArtVenue</p></span></span>
+          </div>
+          <div className={style.text} >
+            A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed lorem cursus.
+          </div>
+        </div>
+        <div className={style.items} >
+          <div className={style.title} >
+            <span className={style.companies_logos} ><span><img src={WavesLogo} alt='SmartFinderLogo' /></span><span><p>Waves</p></span></span>
+          </div>
+          <div className={style.text} >
+            Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.
+          </div>
+        </div>
+
+      </div>
+      <div className={style.buttons_container} >
+        <button onClick={scrollPref}>
+          <ArrowBackIcon className={style.icon} />
+          Pref
+        </button>
+        <button onClick={scrollNext}>
+          Next
+          <ArrowForwardIcon className={style.icon} />
+        </button>
       </div>
     </div>
-  );
+  )
 }
 
-export default SliderCompanies;
+export default Slider

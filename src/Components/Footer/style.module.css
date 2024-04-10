@@ -102,4 +102,12 @@
     .bottom_container p {
         margin-left: 5%;
     }
+    .logo_span {
+        gap: 16px;
+        margin-left: 5%;
+        justify-content: flex-start;    
+    }
+    .store_container {
+        margin-left: 5%;
+    }
 }
