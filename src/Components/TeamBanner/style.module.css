@@ -90,6 +90,8 @@
     width: 204px;
 }
 
+
+
 @media (max-width: 740px) {
     .title_container {
         font-size: 24px;

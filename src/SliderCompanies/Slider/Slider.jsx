@@ -7,6 +7,11 @@ import ZoomerrLogo from '../../asstes/logos/Zoomerr.png'
 import WavesLogo from '../../asstes/logos/Waves.png'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import account1 from '../../asstes/accounts/account1.jpg'
+import account2 from '../../asstes/accounts/account2.jpg'
+import account3 from '../../asstes/accounts/account3.jpg'
+
+
 
 function Slider() {
 
@@ -14,7 +19,7 @@ function Slider() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const scrollPref = () => {
-    const newPosition = scrollPosition - 40;
+    const newPosition = scrollPosition - 80;
     setScrollPosition(newPosition < 0 ? 0 : newPosition);
     if (containerRef.current) {
       containerRef.current.scrollLeft = newPosition;
@@ -22,7 +27,7 @@ function Slider() {
   };
 
   const scrollNext = () => {
-    const newPosition = scrollPosition + 40;
+    const newPosition = scrollPosition + 80;
     if (containerRef.current) {
       containerRef.current.scrollLeft = newPosition;
     }
@@ -40,6 +45,15 @@ function Slider() {
           <div className={style.text} >
             Amet morbi enim sodales quis dui, in habitant pharetra. Risus id fringilla sed adipiscing volutpat sit varius turpis. Sed pretium semper rhoncus, tellus semper.
           </div>
+          <div className={style.account_container} >
+            <div className={style.account_img}>
+              <img src={account1} alt='account' />
+            </div>
+            <div className={style.account_name} >
+              <span>Hellena John</span>
+              <span>Co-founder</span>
+            </div>
+          </div>
         </div>
         <div className={style.items} >
           <div className={style.title} >
@@ -47,6 +61,15 @@ function Slider() {
           </div>
           <div className={style.text} >
             Non risus viverra enim, quis. Eget vitae arcu vivamus sit tellus, viverra turpis lorem. Varius a turpis urna id porttitor.
+          </div>
+          <div className={style.account_container} >
+            <div className={style.account_img}>
+              <img src={account2} alt='account' />
+            </div>
+            <div className={style.account_name} >
+              <span>Hellen Jummy</span>
+              <span>Team Lead</span>
+            </div>
           </div>
         </div>
         <div className={style.items} >
@@ -56,6 +79,15 @@ function Slider() {
           <div className={style.text} >
             Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla. Lacus, ut congue sagittis vel nisi integer imperdiet a vitae.
           </div>
+          <div className={style.account_container} >
+            <div className={style.account_img}>
+              <img src={account1} alt='account' />
+            </div>
+            <div className={style.account_name} >
+              <span>Hellena John</span>
+              <span>Co-founder</span>
+            </div>
+          </div>
         </div>
         <div className={style.items} >
           <div className={style.title} >
@@ -64,6 +96,15 @@ function Slider() {
           <div className={style.text} >
             A eget sed posuere dui risus habitasse mauris. Venenatis aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed lorem cursus.
           </div>
+          <div className={style.account_container} >
+            <div className={style.account_img}>
+              <img src={account3} alt='account' />
+            </div>
+            <div className={style.account_name} >
+              <span>David Oshodi</span>
+              <span>Manager</span>
+            </div>
+          </div>
         </div>
         <div className={style.items} >
           <div className={style.title} >
@@ -71,6 +112,15 @@ function Slider() {
           </div>
           <div className={style.text} >
             Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.
+          </div>
+          <div className={style.account_container} >
+            <div className={style.account_img}>
+              <img src={account1} alt='account' />
+            </div>
+            <div className={style.account_name} >
+              <span>Hellena John</span>
+              <span>Co-founder</span>
+            </div>
           </div>
         </div>
 
