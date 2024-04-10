@@ -126,7 +126,8 @@
 @media (max-width: 1190px) {
     .main_container {
         height: auto;
-        margin-bottom: 10px;
+        margin-bottom: 80px;
+        gap: 20px;
     }
     .banner_container {
         flex-direction: column;
@@ -153,6 +154,8 @@
         text-align: center;
     }
     .image_container {
-        width: 80%;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 16px;
     }
 }
