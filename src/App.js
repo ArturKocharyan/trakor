@@ -2,6 +2,7 @@ import './App.css';
 import Companies from './Components/Companies/Companies';
 import Footer from './Components/Footer/Footer';
 import Graphic from './Components/Graphic/Graphic';
+import Last from './Components/LastComponent/Last';
 import Management from './Components/Menagement/Management';
 import NavBar from './Components/NavBar/NavBar';
 import BigBanner from './Components/PigBanner/BigBanner';
@@ -27,6 +28,7 @@ function App() {
         <Graphic />
         <WorkFaster />
         <SliderCompanies />
+        <Last />
         <Footer />
       </div>
     </div>
