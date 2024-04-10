@@ -1,9 +1,9 @@
 import React from 'react'
 import style from './style.module.css'
-import img1 from '../../asstes/teamImg/Picture.png'
-import img2 from '../../asstes/teamImg/Picture1.png'
-import img3 from '../../asstes/teamImg/Picture2.png'
-import img4 from '../../asstes/teamImg/Picture3.png'
+import img1 from '../../asstes/teamImg/TeamImg1.jpg'
+import img2 from '../../asstes/teamImg/TeamImg2.jpg'
+import img3 from '../../asstes/teamImg/TeamImg3.jpg'
+import img4 from '../../asstes/teamImg/TeamImg4.jpg'
 
 function TeamBanner() {
     return (
@@ -21,13 +21,13 @@ function TeamBanner() {
                         Venenatis euismod mauris quis sit purus nisi. Sed quis eget augue ut aliquam sed</span>
                 </div>
                 <div className={style.image_container} >
-                    <div className={style.first_img_conatiner} >
-                        <span className={style.image_span} ><img src={img1} alt='team' /></span>
-                        <span className={style.image_span} ><img src={img2} alt='team' /></span>
+                    <div className={style.top_container} >
+                        <img src={img1} alt='team' />
+                        <img src={img2} alt='team' />
                     </div>
-                    <div className={style.second_img_conatiner} >
-                        <span><img src={img3} alt='team' /></span>
-                        <span><img src={img4} alt='team' /></span>
+                    <div className={style.bottom_container}>
+                        <img src={img3} alt='team' />
+                        <img src={img4} alt='team' />
                     </div>
                 </div>
             </div>

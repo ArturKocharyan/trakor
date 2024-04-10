@@ -167,6 +167,9 @@
     .bottom_image {
         height: auto;
     }
+    .bottom_image img {
+        height: 172px;
+    }
     .first_image {
         height: 183px;
     }
