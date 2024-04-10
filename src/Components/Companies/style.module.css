@@ -35,6 +35,10 @@ p {
     
 }
 
+.logos :last-child {
+    margin-top: 5px;
+}
+
 .companies_logos {
     display: flex;
     gap: 8px;

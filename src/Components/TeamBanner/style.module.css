@@ -64,8 +64,8 @@
     display: flex;
     width: 90%;
     height: 50%;
-    margin-left: 5%;
     gap: 24px;
+    justify-content: flex-end;
 }
 
 .top_container img{
