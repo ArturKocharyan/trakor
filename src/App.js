@@ -1,5 +1,6 @@
 import './App.css';
 import Companies from './Components/Companies/Companies';
+import Footer from './Components/Footer/Footer';
 import Graphic from './Components/Graphic/Graphic';
 import Management from './Components/Menagement/Management';
 import NavBar from './Components/NavBar/NavBar';
@@ -26,6 +27,7 @@ function App() {
         <Graphic />
         <WorkFaster />
         <SliderCompanies />
+        <Footer />
       </div>
     </div>
   );
