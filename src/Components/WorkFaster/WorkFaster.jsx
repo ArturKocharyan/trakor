@@ -1,5 +1,7 @@
 import React from "react";
 import style from "./style.module.css";
+import pic from '../../asstes/Picture.jpg';
+import CustomButton from "../../elements/Button";
 
 function WorkFaster() {
   return (
@@ -17,8 +19,11 @@ function WorkFaster() {
               adipiscing lacinia.
             </p>
           </div>
+          <CustomButton backgroundColor="#4F46E5" textColor="white" border='#6366F1' maxWidth='186px' children='Start for free' />
         </div>
-        <div className={style.second_container}></div>
+        <div className={style.second_container}>
+          <img src={pic} alt="pic" />
+        </div>
       </div>
     </div>
   );
