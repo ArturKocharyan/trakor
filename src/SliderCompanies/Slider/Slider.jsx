@@ -36,7 +36,7 @@ function Slider() {
 
 
   return (
-    <div>
+    <div className={style.main_container} >
       <div className={style.cards_container} ref={containerRef} >
         <div className={style.items} >
           <div className={style.title} >

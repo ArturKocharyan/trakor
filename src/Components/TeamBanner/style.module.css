@@ -106,9 +106,13 @@
         line-height: 22.4px;
         text-align: center;
     }
+    .top_container {
+        justify-content: flex-start;
+    }
     .bottom_container{
         margin-top: 5%;
         margin-left: 12%;
+        
     }
     .top_container img{
         height: 112px;

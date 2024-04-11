@@ -3,6 +3,7 @@
     width: 100%;
     justify-content: center;
     font-family: "Roboto", sans-serif;
+    padding: 0 5px;
 }
 
 p {
@@ -24,8 +25,10 @@ p {
 }
 
 .logos {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
     color: #CBD5E1;
     font-size: 24px;
     font-weight: 700;
@@ -46,10 +49,7 @@ p {
 
 @media (max-width: 740px) {
     .logos {
-        grid-template-columns: auto auto ;
-        text-align: left;
-        justify-items: center;
-        justify-content: center;
+        gap: 24px;
     }
     .last_logo {
         width: 80%;

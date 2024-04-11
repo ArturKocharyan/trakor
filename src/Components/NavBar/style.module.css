@@ -13,6 +13,12 @@
     justify-content: space-between;
 }
 
+.main_container :first-child {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
 .main_container h1 {
     font-size: 32px;
 }
@@ -69,7 +75,7 @@
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    height: 48px;
+    height: 55px;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;

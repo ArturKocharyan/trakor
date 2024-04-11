@@ -21,7 +21,7 @@
 
 .img_container {
     display: flex;
-    width: 45%;
+    width: 49%;
     flex-direction: column;
 }
 
@@ -36,6 +36,7 @@
     width: 45%;
     flex-direction: column;
     justify-content: center;
+    gap: 16px;
 
 }
 

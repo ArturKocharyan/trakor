@@ -30,9 +30,11 @@
     color: #CBD5E1;
 }
 
-.ilder_div {
+.silder_div {
     display: flex;
     margin-top: 50px;
+    width: 100%;
+    justify-content: center;
 }
 
 

@@ -3,7 +3,7 @@
     width: 100%;
     font-family: "Roboto", sans-serif;
     justify-content: center;
-    height: 521px;
+    padding-bottom: 160px;
 }
 
 .content_container {
@@ -13,6 +13,7 @@
     padding-top: 80px;
     flex-direction: column;
     gap: 32px;
+    padding: 0 20px;
 }
 
 .title {
