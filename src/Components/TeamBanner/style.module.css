@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 80px 20px;
+    padding: 80px 15px;
 }
 
 .content_container {
@@ -27,6 +27,7 @@
     font-weight: 800;
     line-height: 52.8px;
     text-align: left;
+    gap: 8px;
 }
 
 .title_container :last-child {
@@ -49,7 +50,6 @@
 
 .top_container {
     display: flex;
-    height: 192px;
     width: 95%;
     align-self: end;
     justify-content: flex-end;
@@ -72,15 +72,22 @@
 
 .images_container img {
     width: 100%;
-    height: 100% ;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.bottom_container .image_span {
+.bottom_container :first-child {
     height: 100%;
     max-width: 192px;
-    max-width: 264px;
+    max-width: 207px;
+    width: 100%;
+}
+
+.bottom_container :last-child {
+    height: 100%;
+    max-width: 192px;
+    max-width: 345px;
     width: 100%;
 }
 
@@ -89,7 +96,52 @@
         flex-direction: column;
         gap: 24px;
     }
+
+    .top_container {
+        justify-content: flex-start;
+    }
+
+    .bottom_container {
+        justify-content: center;
+    }
+
     .text_container {
         width: 100%;
+    }
+
+    .top_container .image_span {
+        max-height: 112px;
+        max-width: 172.5px;
+    }
+
+    .bottom_container :first-child {
+        max-width: 187px;
+        max-height: 112px;
+    }
+
+    .bottom_container :last-child {
+        max-width: 123px;
+        max-height: 112px;
+    }
+
+    .main_container {
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .title_container {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26.4px;
+        text-align: center;
+    }
+
+    .text_container p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28.8px;
+
+
     }
 }
