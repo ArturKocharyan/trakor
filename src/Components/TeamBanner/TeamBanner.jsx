@@ -8,26 +8,26 @@ import img4 from '../../asstes/teamImg/TeamImg4.jpg'
 function TeamBanner() {
     return (
         <div className={style.main_container} >
-            <div className={style.banner_container} >
+            <div className={style.content_container} >
                 <div className={style.text_container} >
                     <div className={style.title_container} >
-                        <span className={style.first_title} >Bigger team.</span>
-                        <span className={style.second_title} >More time.</span>
+                        <span>Bigger team.</span>
+                        <span>More time.</span>
                     </div>
-                    <span className={style.text} >Quam quis orci turpis vulputate platea.
-                        Urna ipsum suscipit nullam ipsum nam leo fringilla eget lorem.
-                        Sit vestibulum phasellus integer et et diam malesuada.
-                        Sed tortor orci mauris proin ac.
-                        Venenatis euismod mauris quis sit purus nisi. Sed quis eget augue ut aliquam sed</span>
+                    <div>
+                        <p>
+                            Quam quis orci turpis vulputate platea. Urna ipsum suscipit nullam ipsum nam leo fringilla eget lorem. Sit vestibulum phasellus integer et et diam malesuada. Sed tortor orci mauris proin ac. Venenatis euismod mauris quis sit purus nisi. Sed quis eget augue ut aliquam sed.
+                        </p>
+                    </div>
                 </div>
-                <div className={style.image_container} >
+                <div className={style.images_container} >
                     <div className={style.top_container} >
-                        <span className={style.toper_image} ><img src={img1} alt='team' /></span>
-                        <span className={style.toper_image} ><img src={img2} alt='team' /></span>
+                        <span className={style.image_span} ><img src={img1} alt='img' /></span>
+                        <span className={style.image_span} ><img src={img2} alt='img' /></span>
                     </div>
-                    <div className={style.bottom_container}>
-                        <span className={style.toper_image}><img src={img3} alt='team' /></span>
-                        <span className={style.toper_image}><img src={img4} alt='team' /></span>
+                    <div className={style.bottom_container} >
+                        <span className={style.image_span} ><img src={img3} alt='img' /></span>
+                        <span className={style.image_span} ><img src={img4} alt='img' /></span>
                     </div>
                 </div>
             </div>
