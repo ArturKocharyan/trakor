@@ -22,12 +22,12 @@ function TeamBanner() {
                 </div>
                 <div className={style.image_container} >
                     <div className={style.top_container} >
-                        <img src={img1} alt='team' />
-                        <img src={img2} alt='team' />
+                        <span className={style.toper_image} ><img src={img1} alt='team' /></span>
+                        <span className={style.toper_image} ><img src={img2} alt='team' /></span>
                     </div>
                     <div className={style.bottom_container}>
-                        <img src={img3} alt='team' />
-                        <img src={img4} alt='team' />
+                        <span className={style.toper_image}><img src={img3} alt='team' /></span>
+                        <span className={style.toper_image}><img src={img4} alt='team' /></span>
                     </div>
                 </div>
             </div>

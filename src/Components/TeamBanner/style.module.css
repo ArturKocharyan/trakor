@@ -70,7 +70,7 @@
 
 .top_container img{
     height: 192px;
-    width: 264px;
+    max-width: 264px;
     border-radius: 20px;
 }
 
@@ -83,11 +83,17 @@
 
 .bottom_container img {
     height: 192px;
+    max-width: 264px;
     border-radius: 20px;
 }
 
 .bottom_container :first-child {
-    width: 204px;
+    max-width: 204px;
+}
+
+.toper_image {
+    display: block;
+    width: 50%;
 }
 
 
