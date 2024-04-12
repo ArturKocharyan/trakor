@@ -6,7 +6,7 @@ import CustomButton from "../../elements/Button";
 function WorkFaster() {
   return (
     <div className={style.main_container}>
-      <div className={style.content_container}>
+      <div className={style.content_container} >
         <div className={style.first_container}>
           <div className={style.title_container}>
             <span>Control the flow.</span>
