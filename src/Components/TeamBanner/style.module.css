@@ -116,14 +116,17 @@
     }
     .top_container img{
         height: 112px;
-        width: 172px;
+        max-width: 172px;
+        width: 100%;
     }
     .bottom_container img {
         height: 112px;
-        width: 187px;
+        max-width: 187px;
+        width: 100%;
     }
     .bottom_container :first-child {
-        width: 123px;
+        max-width: 123px;
+        width: 100%;
     }
 }
 
