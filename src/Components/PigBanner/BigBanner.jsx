@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './style.module.css'
-import Desktop from '../../asstes/Desktop'
 import linkPart from '../../asstes/desktop/TopBar.png'
 import windowPart from '../../asstes/desktop/Desktop-App-Placeholder-1.png'
 
