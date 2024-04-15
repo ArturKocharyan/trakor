@@ -1,24 +1,18 @@
 import React from 'react';
+import style from "./style.module.css"
 
-function CustomButton({ backgroundColor, textColor, onClick, children, border, maxWidth }) {
+function CustomButton({ backgroundColor, textColor, onClick, children, border, maxWidth,responsiveStyles }) {
   const buttonStyle = {
     backgroundColor: backgroundColor,
     color: textColor,
     border: `1px solid ${border}`,
-    borderRadius: '8px',
-    cursor: 'pointer',
-    fontSize: '16px',
-    fontWeight: 'bold',
-    transition: 'background-color 0.3s ease',
     maxWidth: maxWidth,
-    width: '100%',
-    boxSizing: 'border-box',
-    padding: '8px',
-    height: "56px", 
+    responsiveStyles
   };
 
+  console.log(responsiveStyles)
   return (
-    <button style={buttonStyle} onClick={onClick}>
+    <button className={style.custom_button} style={buttonStyle} onClick={onClick}>
       {children}
     </button>
   );

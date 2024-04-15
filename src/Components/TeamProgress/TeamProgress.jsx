@@ -20,7 +20,7 @@ function TeamProgress() {
                     <CustomButton backgroundColor="#334155" textColor="white" border='#475569' maxWidth='256px' children='Request more info' />
                 </div>
                 <div className={style.image_container} >
-                    <img src={img} alt='shape' ></img>
+                    <spna><img src={img} alt='shape' ></img></spna>
                 </div>
             </div>
         </div>

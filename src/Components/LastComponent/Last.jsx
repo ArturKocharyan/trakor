@@ -12,7 +12,18 @@ function Last() {
                 </div>
                 <div className={style.text} >Malesuada ut aliquam at ac est nisi, interdum etiam dignissim.</div>
                 <div className={style.button_container}>
-                    <CustomButton backgroundColor="#4F46E5" textColor="white" border='#6366F1' maxWidth='256px' children='Start for free' />
+                    <CustomButton
+                     backgroundColor="#4F46E5" 
+                     textColor="white" 
+                     border='#6366F1' 
+                     maxWidth='256px' 
+                     children='Start for free' 
+                     responsiveStyles={{
+                        '@media (max-width: 768px)': {
+                          height: '48px',
+                        },
+                      }}
+                     />
                     <CustomButton backgroundColor="#334155" textColor="white" border='#475569' maxWidth='256px' children='Request more info' />
                 </div>
             </div>
