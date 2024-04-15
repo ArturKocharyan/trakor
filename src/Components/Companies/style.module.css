@@ -13,6 +13,12 @@ p {
 
 .text_container {
     margin-bottom: 80px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: center;
+    color: #CBD5E1;
+
 }
 
 .content {
@@ -35,7 +41,7 @@ p {
     line-height: 26.4px;
     text-align: left;
     justify-content: space-evenly;
-    
+
 }
 
 .logos :last-child {
@@ -51,7 +57,14 @@ p {
     .logos {
         gap: 24px;
     }
+
     .last_logo {
         width: 80%;
+    }
+
+    .text_container {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 19.8px;
     }
 }
