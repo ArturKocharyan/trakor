@@ -7,10 +7,8 @@ function CustomButton({ backgroundColor, textColor, onClick, children, border, m
     color: textColor,
     border: `1px solid ${border}`,
     maxWidth: maxWidth,
-    responsiveStyles
   };
 
-  console.log(responsiveStyles)
   return (
     <button className={style.custom_button} style={buttonStyle} onClick={onClick}>
       {children}

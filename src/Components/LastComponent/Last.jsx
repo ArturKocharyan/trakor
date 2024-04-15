@@ -18,11 +18,6 @@ function Last() {
                      border='#6366F1' 
                      maxWidth='256px' 
                      children='Start for free' 
-                     responsiveStyles={{
-                        '@media (max-width: 768px)': {
-                          height: '48px',
-                        },
-                      }}
                      />
                     <CustomButton backgroundColor="#334155" textColor="white" border='#475569' maxWidth='256px' children='Request more info' />
                 </div>

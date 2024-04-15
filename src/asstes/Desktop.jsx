@@ -188,16 +188,6 @@ function Desktop() {
             ></path>
           </g>
         </g>
-        <rect
-          width="1290"
-          height="848"
-          x="5"
-          y="5.141"
-          stroke="#fff"
-          strokeOpacity="0.07"
-          strokeWidth="10"
-          rx="25"
-        ></rect>
       </g>
       <defs>
         <filter
