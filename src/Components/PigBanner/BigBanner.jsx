@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './style.module.css'
-import Desktop from '../../asstes/Desktop.png'
+import Desktop from '../../asstes/Desktop'
 
 function BigBanner() {
     return (
@@ -10,7 +10,7 @@ function BigBanner() {
                     <span>Aliquet lacus volutpat tristique sed diam.</span> </div>
                 <div>
                     <span className={style.image_span} >
-                        <img src={Desktop}  alt='dasktop' />
+                        <Desktop />
                     </span>
                 </div>
             </div>

@@ -25,10 +25,18 @@
     text-align: center;
 }
 
-.content_container img {
-    max-width: 100%;
-    height: auto;
+.image_span {
+    display: flex;
+    justify-content: center;
 }
+
+.image_span :first-child {
+    max-width: 1440px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
 
 @media (max-width: 740px) {
     .title {
